@@ -1,0 +1,4 @@
+DE0_NANO中的extrapolation_V3_1.vhd是原始的shift_register逻辑实现。
+extrapolation_V3_1_ramlogic.vhd 是用ram逻辑实现算法。
+DE0_NANO中的extrapolation_V3.vhd是ram逻辑在ram器件下的实现。
+
