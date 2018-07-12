@@ -1,2 +1,1 @@
-CORDIC_PIPELINEΪ��Verilog��VHDLԴ�����д��
-
+CORDIC_PIPELINE为用Verilog对VHDL源码的重写。
