@@ -1,0 +1,1 @@
+CORDIC_PIPELINE为用verilog对vhdl源码的重写。
