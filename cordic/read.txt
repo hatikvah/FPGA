@@ -1,2 +1,8 @@
 ﻿CORDIC_PIPELINE为用Verilog对VHDL源码的重写。
-CORDIC为循环周期逻辑改写。
+CORDIC_CYCLE为循环周期逻辑改写。
+cordic.m 为用MATLAB实现的cordic算法模拟
+
+如何观察资源利用率：
+>Settings > disable SignalTaps
+>模块输出信号连接引脚 尽量使 Analyze&Synthesis > Connectivity Checks中没有被综合掉的信号
+
