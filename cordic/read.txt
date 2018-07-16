@@ -1,1 +1,2 @@
-CORDIC_PIPELINE为用Verilog对VHDL源码的重写。
+﻿CORDIC_PIPELINE为用Verilog对VHDL源码的重写。
+CORDIC为循环周期逻辑改写。
