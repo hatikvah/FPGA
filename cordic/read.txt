@@ -7,7 +7,7 @@
 3 rtl-dspba
  .a CORDIC_CYCLE.slx是用dspbuilder实现的电路级设计。 
  .b calc_rom.m将数据写入ROM文件中。
- .c CORDIC_ROM中的cordic算法模块由CORDIC_CYCLE.slx自动生成，顶层模块读入ROM数据进行计算。
+ .c CORDIC_ROM.qar中的cordic算法模块由CORDIC_CYCLE.slx自动生成，顶层模块读入ROM数据进行计算。
 
 
 quartus如何观察资源利用率：
