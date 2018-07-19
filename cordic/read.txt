@@ -13,4 +13,4 @@
 quartus如何观察资源利用率：
 >Settings > disable SignalTaps
 >模块输出信号连接引脚 尽量使 Analyze&Synthesis > Connectivity Checks中没有被综合掉的信号
-
+ >CORDIC_ROM中把输出信号做异或，因为有"1"做"或"运算后面管脚会自动综合掉
