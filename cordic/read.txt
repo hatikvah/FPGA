@@ -1,16 +1,16 @@
 ﻿1 cordic.m 为用MATLAB实现的cordic算法模拟
 
 2 rtl
- .a CORDIC_PIPELINE为用Verilog对VHDL源码的重写。
- .b CORDIC_CYCLE将pipeline改写为循环周期逻辑。
+ .a CORDIC_PIPELINE.qar为用Verilog对VHDL源码的重写。
+ .b CORDIC_CYCLE.qar将pipeline改写为循环周期逻辑。
 
 3 rtl-dspba
- .a CORDIC_CYCLE.slx是用dspbuilder实现的电路级设计。 
+ .a cordic_cycle_modulized.slx是参照CORDIC_CYCLE源码用dspbuilder实现的电路级设计。 
  .b calc_rom.m将数据写入ROM文件中。
- .c CORDIC_ROM.qar中的cordic算法模块由CORDIC_CYCLE.slx自动生成，顶层模块读入ROM数据进行计算。
+ .c CORDIC_ROM_MODULIZED.qar中的cordic算法模块由cordic_cycle_modulized.slx自动生成，顶层模块读入ROM数据进行计算。
 
 
 quartus如何观察资源利用率：
 >Settings > disable SignalTaps
 >模块输出信号连接引脚 尽量使 Analyze&Synthesis > Connectivity Checks中没有被综合掉的信号
- >CORDIC_ROM中把输出信号做异或，因为有"1"做"或"运算后面管脚会自动综合掉
+ >CORDIC_ROM_MODULIZED中把输出信号做异或，因为有"1"做"或"运算后面管脚会自动综合掉
