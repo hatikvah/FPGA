@@ -1,2 +1,4 @@
-biss-slave-testbench
+1. biss-slave-testbench 为在一块EP4CE22F17(50M)板卡上的测试。
+
+2. biss中dcoder和dcoder-s分别为在master和slave两块板卡(EP4CE22U14(25M))上的工程，实现biss协议通信。
 

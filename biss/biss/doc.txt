@@ -1,13 +1,18 @@
 --------------------------
-Biss Master
+BISS
 --------------------------
 
+#建立工程
 config.bat中设置quartus安装目录/工程路径/rev_dcoder_15k.tcl路径，调用quartushell运行rev_dcoder_15k.tcl脚本
 
 rev_dcoder_15k.tcl中新建工程Dcoder，设置引脚和设备配置文件Dcoder_LI_HW1_dev/pin.tcl路径
-约束文件sdc可以在工程内添加。
+约束文件sdc可以在工程内添加也可以用tcl脚本配置。
 
 pin.tcl中修改引脚设置，dev.tcl修改顶层模块名。
 
 sdc文件在 TimeQuest Timing Analysis > TimeQuest Timing Analyzer中create clock后生成。
 PLL约束命令可以手动在sdc中添加。
+
+#biss协议
+dcoder工程为biss-master，发送驱动信号MA接收SLO。dcoder-s为biss-slave，接收MA向master发送SLO。
+SP3077E上限频率为16M，设置系统时钟为12.5M，MA频率1.25M，整体工作频率降低8倍。
